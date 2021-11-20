@@ -14,7 +14,7 @@ public class Calculator {
         return firstNumber * secondNumber;
     }
 
-    public int divideNumbers(int dividend, int divider) {
+    public double divideNumbers(double dividend, double divider) {
         if (divider == 0) {
             return 0;
         }

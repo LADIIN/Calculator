@@ -61,32 +61,31 @@ public class CalculatorTest {
     }
 
     @Test
-    public void testAddShouldDivideWhenNumbersPositive(){
+    public void testAddShouldDivideWhenNumbersPositive() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.divideNumbers(5, 4);
+        double result = calculator.divideNumbers(7.5, 2);
 
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(3.75, result, 0.01);
     }
 
     @Test
-    public void testAddShouldDivideWhenNumbersNegative(){
+    public void testAddShouldDivideWhenNumbersNegative() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.divideNumbers(-5, -4);
+        double result = calculator.divideNumbers(-5.5, -1.1);
 
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(5, result, 0.1);
     }
 
     @Test
-    public void testAddShouldNotDivideWhenZeroDivider(){
+    public void testAddShouldNotDivideWhenZeroDivider() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.divideNumbers(5, 0);
+        double result = calculator.divideNumbers(5, 0);
 
-        Assert.assertEquals(0, result);
+        Assert.assertEquals(0, result, 0.1);
     }
-
 
 
 }
