@@ -9,36 +9,36 @@ public class CalculatorTest {
     public void testAddShouldSumWhenNumbersPositive() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.sumNumbers(5, 4);
+        double result = calculator.sumNumbers(5.33, 4.55);
 
-        Assert.assertEquals(9, result);
+        Assert.assertEquals(9.88, result, 0.1);
     }
 
     @Test
     public void testAddShouldSumWhenNumbersNegative() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.sumNumbers(-5, -4);
+        double result = calculator.sumNumbers(-5.33, -4.55);
 
-        Assert.assertEquals(-9, result);
+        Assert.assertEquals(-9.88, result, 0.1);
     }
 
     @Test
     public void testAddShouldSubtractWhenNumbersPositive() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.subtractNumbers(5, 4);
+        double result = calculator.subtractNumbers(5.7, 4.4);
 
-        Assert.assertEquals(1, result);
+        Assert.assertEquals(1.3, result, 0.1);
     }
 
     @Test
     public void testAddShouldSubtractWhenNumbersNegative() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.subtractNumbers(-5, -4);
+        double result = calculator.subtractNumbers(-5.7, -4.4);
 
-        Assert.assertEquals(-1, result);
+        Assert.assertEquals(-1.3, result, 0.1);
     }
 
 
@@ -46,18 +46,18 @@ public class CalculatorTest {
     public void testAddShouldMultiplyWhenNumbersPositive() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.multiplyNumbers(5, 4);
+        double result = calculator.multiplyNumbers(5.1, 4.3);
 
-        Assert.assertEquals(20, result);
+        Assert.assertEquals(21.93, result, 0.1);
     }
 
     @Test
     public void testAddShouldMultiplyWhenNumbersNegative() {
         Calculator calculator = new Calculator();
 
-        int result = calculator.multiplyNumbers(-5, -4);
+        double result = calculator.multiplyNumbers(-5.1, -4.3);
 
-        Assert.assertEquals(20, result);
+        Assert.assertEquals(21.93, result, 0.1);
     }
 
     @Test
@@ -82,7 +82,7 @@ public class CalculatorTest {
     public void testAddShouldNotDivideWhenZeroDivider() {
         Calculator calculator = new Calculator();
 
-        double result = calculator.divideNumbers(5, 0);
+        double result = calculator.divideNumbers(5.89, 0);
 
         Assert.assertEquals(0, result, 0.1);
     }

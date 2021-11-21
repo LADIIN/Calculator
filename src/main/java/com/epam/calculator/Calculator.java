@@ -2,15 +2,15 @@ package com.epam.calculator;
 
 public class Calculator {
 
-    public int sumNumbers(int firstNumber, int secondNumber) {
+    public double sumNumbers(double firstNumber, double secondNumber) {
         return firstNumber + secondNumber;
     }
 
-    public int subtractNumbers(int firstNumber, int secondNumber) {
+    public double subtractNumbers(double firstNumber, double secondNumber) {
         return firstNumber - secondNumber;
     }
 
-    public int multiplyNumbers(int firstNumber, int secondNumber) {
+    public double multiplyNumbers(double firstNumber, double secondNumber) {
         return firstNumber * secondNumber;
     }
 
@@ -21,6 +21,5 @@ public class Calculator {
 
         return dividend / divider;
     }
-
 
 }
