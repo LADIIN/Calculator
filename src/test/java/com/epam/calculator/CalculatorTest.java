@@ -57,7 +57,7 @@ public class CalculatorTest {
 
         double result = calculator.multiplyNumbers(-5.1, -4.3);
 
-        Assert.assertEquals(21.93, result, 0.1);
+        Assert.assertEquals(21.93, result, 0.001);
     }
 
     @Test
@@ -66,7 +66,7 @@ public class CalculatorTest {
 
         double result = calculator.divideNumbers(7.5, 2);
 
-        Assert.assertEquals(3.75, result, 0.01);
+        Assert.assertEquals(3.75, result, 0.001);
     }
 
     @Test
